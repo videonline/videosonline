@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Coding Assisstant Web</title>
+<link rel="stylesheet" href="estilo_parallax/estilo_parallax.css">
+<link rel="stylesheet" href="estilo_parallax/estilo_coding.css">
+<link rel="stylesheet" href="estilo_parallax/estilo_ABS.css">
+<script language="javascript" type="text/javascript" src="scripts/jQuery.js"></script>
+<script language="javascript" type="text/javascript" src="scripts/codingfunciones.js"></script>
+<script>
+$(document).ready( function(){
+$('#mh_principal_div').click(function() {  
+	$('.menuh, .menuhclick').toggleClass('menuh menuhclick');
+	
+});
+$('#abs').click(function() {  
+	$('.codingsito, .codingsito2').toggleClass('codingsito codingsito2');
+	$('.absfrm, .absfrm2').toggleClass('absfrm absfrm2');
+});
+});
+</script>
+</head>
+<body id="Coding">
+<script type="text/javascript" src="scripts/copyclip.js"></script>
+<header>
+  <nav><a href="index.html" class="nav">Coding Assistant</a> <a class="nav" href="oem.html">OEM Contact</a> <a href="tools.html" class="nav">Tools</a> <a href="generator.html" class="nav">Mail Templates</a><div id="mh_principal_div"></div> </nav>
+</header>
+<div class="mision">
+  <h2>Coding Assistant</h2>
+  <div id="codingsito" class="codingsito">
+    <form id="Subjets">
+      <label id="subjetlabl">Subjet:</label>
+      <div id="Subjet"> <span>AnswerDesk</span><span id="Product1"></span><span id="Subprod1"></span><span id="Plataform1"></span><span id="Topic1"></span><span id="Subtopic1"></span><span id="Oferta1"></span><span id="Goodwill1"></span> </div>
+      <input id="Specific" placeholder="Write Scenario Here" disabled>
+    </form>
+    <button class="boton1" type="button" id="copyClip" data-clipboard-target="#Subjet">Copiar</button>
+    <button type="button" class="boton2" id="reset" onClick="CodingReset()">Reset</button>
+	<button type="button" class="boton3" id="abs">ABS Creator</button>
+    <select size="31" type="text" id="Product" onChange="ProductsReset()">
+      <option class="titulo" value=" " selected>Product</option>
+      <option>Answer Desk (Assure)</option>
+      <option>Bing</option>
+      <option>Internet Explorer 11</option>
+      <option>MS Hardware</option>
+      <option>MSN</option>
+      <option>Office 2003</option>
+      <option>Office 2007</option>
+      <option>Office 2010</option>
+      <option>Office 2013</option>
+      <option>Office 2016</option>
+      <option>Office 2016 for Mac</option>
+      <option>Office 365 Commercial</option>
+      <option>Office 365 Home</option>
+      <option>Office 365 Personal</option>
+      <option>Office 365 Pro Plus Student</option>
+      <option>Office 365 University</option>
+      <option>Office for Mac 2011</option>
+      <option>Office HUP - Home Use Program</option>
+      <option>Office Insider Program</option>
+      <option>Office Mobile</option>
+      <option>Office Online</option>
+      <option>Office Sway</option>
+      <option>OneDrive</option>
+      <option>Outlook.com</option>
+      <option>Product Not Listed</option>
+      <option>Skype</option>
+      <option>Windows 10 Games</option>
+      <option>Windows 10 Home or Pro or S</option>
+      <option>Windows 10 Insider</option>
+      <option>Windows 10 Mobile</option>
+      <option>Windows 7</option>
+      <option>Windows 8</option>
+      <option>Windows 8.1</option>
+      <option>Windows Commercial</option>
+      <option>Windows Phone</option>
+      <option>Windows Vista</option>
+      <option>Windows XP</option>
+      <option>Xbox</option>
+    </select>
+    <select size="16" type="text" id="Plataform">
+      <option class="titulo" value=" " selected>Plataform</option>
+      <option>3rd Party Browser</option>
+      <option >Internet Explorer 11</option>
+      <option>MacOS Sierra</option>
+      <option>MacOS HighSierra</option>
+      <option>Microsoft Edge</option>
+      <option>OS X Earlier versions</option>
+      <option>OS X El Capitan</option>
+      <option>OS X Yosemite</option>
+      <option>Unsupported Plataform</option>
+      <option>Windows 10 (1511)</option>
+      <option>Windows 10 (1607)</option>
+      <option>Windows 10 (1703)</option>
+      <option>Windows 10 (1709)</option>
+      <option>Windows 7 SP1</option>
+      <option>Windows 8.1</option>
+    </select>
+    <select type="text" id="Goodwill">
+      <option value=" " selected>GoodWill?</option>
+      <option value="WG Perpetual Convert">Perpetual Convert</option>
+      <option value="WG Perpetual no Convert">Perpetual no Convert</option>
+      <option value="WG O365 1 month">O365 1 month</option>
+      <option value="WG O365 2 month">O365 2 month</option>
+      <option value="WG O365 MTLU declined">O365 MTLU declined</option>
+    </select>
+    <select type="text" id="Oferta">
+      <option value=" " selected>Offer Made</option>
+      <option value="Analizara la oferta de soporte">Analizara la oferta de soporte</option>
+      <option value="Acepta la oferta">Acepta la oferta</option>
+      <option value="Ya tiene plan de soporte pago">Ya tiene plan de soporte pago</option>
+      <option value="No tiene opciones pago">No tiene opciones pago</option>
+      <option>Muy costoso</option>
+      <option>No acepta el cargo en la cuenta</option>
+      <option>No acepta pagar</option>
+      <option>No se realiza oferta</option>
+      <option>No proporciona datos</option>
+      <option>Oferta no aplica</option>
+      <option>Sin metodo de pago internacional</option>
+      <option>Prefiere hablar con el OEM</option>
+    </select>
+    <ul id="Subprodiv" class="selectdivs">
+      <li class="titulo">Sub Product</li>
+      <li class="Subprod Office NoMac accs">Access, Project, Visio</li>
+      <li class="Subprod NoDIA Any">Any</li>
+      <li class="Subprod NoDIA MSN">Dial Up, Premium</li>
+      <li class="Subprod Office excel">Excel</li>
+      <li class="Subprod NoDIA HW">Mouse, Keyboard, etc.</li>
+      <li class="Subprod Office NoMac One">OneNote</li>
+      <li class="Subprod Office NoOn out">Outlook</li>
+      <li class="Subprod Office ppt">PowerPoint</li>
+      <li class="Subprod Office NoMac publ">Publisher</li>
+      <li class="Subprod Office OLD NoMul mult">Multiple Apps</li>
+      <li class="Subprod NoDIA Sway">Sway Online</li>
+      <li class="Subprod NoDIA Sway">Sway Windows App</li>
+      <li class="Subprod Office word">Word</li>
+    </ul>
+    <ul id="Topicdiv" class="selectdivs">
+      <li class="titulo">Topic</li>
+      <li class="Topic emerg">!Emerging Issue</li>
+      <li class="Topic ease">Accessibility and Ease of Access</li>
+      <li class="Topic ayp">Account and Profile</li>
+      <li class="Topic act">Activate</li>
+      <li class="Topic down">Download</li>
+      <li class="Topic driver">Drivers, Hardware</li>
+      <li class="Topic email">Email</li>
+      <li class="Topic files">Files and Storage</li>
+      <li class="Topic inst">Install</li>
+      <li class="Topic lang">Language</li>
+      <li class="Topic launch">Launching and Closing</li>
+      <li class="Topic malw">Malware</li>
+      <li class="Topic msa">Microsoft Account</li>
+      <li class="Topic net">Network and Internet</li>
+      <li class="Topic pay">Payments and Refunds</li>
+      <li class="Topic perf">Performance</li>
+      <li class="Topic pers">Personalization, Quick Fixes, Settings</li>
+      <li class="Topic scam">Phishing, Scam</li>
+      <li class="Topic redeem">Redeem</li>
+      <li class="Topic rep">Repair & Recovery</li>
+      <li class="Topic search">Search</li>
+      <li class="Topic subs">Subscription Management</li>
+      <li class="Topic sync">Sync</li>
+      <li class="Topic unsu">Unsupported Scenario</li>
+      <li class="Topic update">Update</li>
+      <li class="Topic apps">Windows Apps, Store</li>
+    </ul>
+    <ul id="Subtopicdiv" class="selectdivs"  >
+      <li class="titulo">Subtopic</li>
+      <li class="Subtopic specific fuera o12o14o15 o16 o16mac 365h 365p 365plus" onClick="Specific()">*Specific Scenario</li>
+      <li class="Subtopic o16 o16mac 365h 365p w10">Acquire New Product</li>
+      <li class="Subtopic assure">Acquire Premium Support</li>
+      <li class="Subtopic outl MSA2">Account Blocked</li>
+      <li class="Subtopic outl MSA2">Account Suspended</li>
+      <li class="Subtopic outl MSA2">Cannot sign in or sign up</li>
+      <li class="Subtopic outl MSA2">Close MSA</li>
+      <li class="Subtopic w10">Black Screen</li>
+      <li class="Subtopic w10">Blue Screen</li>
+      <li class="Subtopic w10">Change product language</li>
+      <li class="Subtopic w10">Disable tablet mode</li>
+      <li class="Subtopic w10">Microsoft Edge Crashes or doesn't work</li>
+      <li class="Subtopic codes o12o14o15 o16 o16mac 365h 365p 365plus">Code Blue</li>
+      <li class="Subtopic codes o12o14o15 o16 o16mac 365h 365p 365plus">Code Green</li>
+      <li class="Subtopic codes o12o14o15 o16 o16mac 365h 365p 365plus">Code Orange</li>
+      <li class="Subtopic codes o12o14o15 o16 o16mac 365h 365p 365plus">Code Pink</li>
+      <li class="Subtopic codes o12o14o15 o16 o16mac 365h 365p 365plus">Code Purple</li>
+      <li class="Subtopic codes o12o14o15 o16 o16mac 365h 365p 365plus">Code Red</li>
+      <li class="Subtopic codes o12o14o15 o16 o16mac 365h 365p 365plus">Code Yellow</li>
+      <li class="Subtopic o12o14o15 o16 o11mac w10 w7">Customer doesn't have the product key</li>
+      <li class="Subtopic o12o14o15 o16 o11mac w10 w7">Customer need to adquire a new product key</li>
+      <li class="Subtopic 365h 365p">Expired, Suspended Subscription</li>
+      <li class="Subtopic o12o14o15 o16 w10 w7">Not-Genuine</li>
+      <li class="Subtopic fuera w8 offer">Offer a new Product</li>
+      <li class="Subtopic 3rd o12o14o15 o16 o16mac 365h 365p 365plus o11mac w7">Redirect to 3rd Party</li>
+      <li class="Subtopic 365plus">Redirect to Benefits Administrator</li>
+      <li class="Subtopic o12o14o15 o16 winoffcomm 365h 365p 365plus">Redirect to Commercial Support</li>
+      <li class="Subtopic ie o12o14o15 o16 o16mac 365h 365p 365plus o11mac w10 w7 ease2">Redirect to Disability Support</li>
+      <li class="Subtopic o12o14o15 o16 365h 365p 365plus omob">Redirect to Domain Provider</li>
+      <li class="Subtopic insider">Redirect to Insider Support</li>
+      <li class="Subtopic oned">Redirect to OneDrive Support</li>
+      <li class="Subtopic outl outl2">Redirect to Outlook.com Support</li>
+      <li class="Subtopic self o12o14o15o15 o16 o16mac o16mac 365h 365p 365plus w7">Redirect to Self-Help</li>
+      <li class="Subtopic sky">Redirect to Skype Support</li>
+      <li class="Subtopic hw">Redirect to Supplemental Parts</li>
+      <li class="Subtopic winphone">Redirect to Windows Phone Support</li>
+      <li class="Subtopic xbox">Redirect to Xbox Support</li>
+      <li class="Subtopic hup">Refund due to Incompatible OS</li>
+      <li class="Subtopic assure">Refund Premium Support</li>
+      <li class="Subtopic o16 o16mac 365h 365p w10">Refund, Redirect to A&B </li>
+      <li class="Subtopic 365h 365p">Renew Subscription</li>
+      <li class="Subtopic 365h">Unable to add or remove a user</li>
+      <li class="Subtopic 365h 365p">Update Billing information</li>
+      <li class="Subtopic w8">Update to Windows 8.1</li>
+      <li class="Subtopic 365h 365p">Upgrade Subscription</li>
+      <li class="Subtopic outl MSA2">Update Security Information</li>
+      <li class="Subtopic outl MSA2">Update Personal Information</li>
+    </ul>
+    <div class="unable"></div>
+    <div class="unable2"></div>
+    <div class="unable3"></div>
+    <div class="unable4"></div>
+  </div>
+   <iframe scrolling="no" class="absfrm" src="abs.html"></iframe>
+<div id="texto1">
+  <a class="side" target="_blank" href="https://support.microsoft.com/en-us/help/13948/global-customer-service-phone-numbers">Contact MS</a>
+</div>
+<div id="texto2">
+  <a class="side" target="_blank" href="https://aka.ms/1-1ols">Contact OLS</a>
+</div>
+<div id="texto3">
+  <a class="side" target="_blank" href="https://support.microsoft.com/en-us/gp/commercialsupport">Contact GBS</a>
+</div>
+<div id="texto4">
+  <a class="side" target="_blank" href="https://www.microsoft.com/en-us/worldwide.aspx">Subsidiary</a>
+</div>
+<div id="texto5">
+  <a class="side" target="_blank" href="https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR1QgpWB7kflGr6TDPb99yDlUREVLRjQ5N0NEUTNQV01GUlpYUVdEUENCVi4u">!Emerging Issues</a>
+</div>
+  <ul class="menuh">
+  <li class="opt">Temas</li>
+  <li class="opt">Temas</li>
+  <li class="opt">Temas</li>
+  <li class="opt">Temas</li>
+  </ul>
+  <div id="comunicado"></div>
+  <iframe scrolling="no" id="comunicado_a_piso" src="banner_comunicado.html"></iframe>
+</div>
+</body>
+</html>

@@ -1,0 +1,411 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media (max-width: 1200px) {
+
+.codingsito{
+	position:absolute;
+	left:5%;
+	transition:1s all;
+}
+.codingsito2{
+	position:absolute;
+	left:4%;
+	transition:0.3s all;
+}
+#Subjet{
+			
+	border: solid;
+	border-width: thin;
+	width: 860px;
+	background-color: white;
+	height: 22px;
+	font-family: Segoe UI;
+	font-size: 10pt;
+	border-radius: 5px;
+		}
+
+#Product,#Plataform {
+	width: 200px;
+	border: 1px solid #93C6FF;
+	font-family: segoe ui;
+	font-size: 9pt;
+	border-radius: 5px;
+	outline: none;		
+	margin-top:45px;
+		}
+		
+#Plataform{
+	width: 172px;
+	height: 261px;
+	top: 257px;
+	overflow: hidden;
+}
+.selectdivs{
+	background-color: white;
+	border: 1px solid #93C6FF;
+	font-family: segoe ui;
+	font-size: 9pt;
+	border-radius: 5px;
+	outline: none;
+	position:absolute;
+	top:147px;
+}
+#Subprodiv{
+	
+	overflow: hidden;
+	height: 226px;
+	width: 170px;
+	left:204px;
+	
+	}
+#Topicdiv {
+	overflow: hidden;
+	height: 495px;
+	width: 234px;
+	left:380px;
+	}
+#Subtopicdiv{
+	overflow-y: scroll;
+	height: 495px;
+	width: 234px;
+	margin-bottom:100px;
+	left:620px;
+}
+#Oferta{
+	border: 1px solid #93C6FF;
+	font-family: Segoe UI;
+	font-size: 10pt;
+	outline: none;	
+	position:absolute;
+	top:50px;
+	left:305px;
+	width: 100px;
+}
+
+#Goodwill{
+	border: 1px solid #93C6FF;
+	font-family: Segoe UI;
+	font-size: 10pt;
+	outline: none;
+	position:absolute;
+	top:80px;
+	left:305px;
+	width: 100px;
+}
+
+#Specific{
+	width: 300px;
+	height: 50px;
+	margin-top:5px;
+	border-radius: 5px;
+	border: solid;
+	border-width: thin;
+		}
+		
+.boton1,.boton2,.boton3{
+	position:absolute;
+	margin-top:5px;
+	border: solid;
+	border-width: thin;
+	width:60px;
+    height:35px;
+	border-radius: 2px;
+	font-size:10px;
+    font-family:Segoe UI;
+    font-weight:bold;
+    color:black;
+}
+
+#copyClip{
+	    background:#83A9CC;
+		margin-left: 70px;
+       }
+	   
+#reset{
+        background: #84C0FF;
+		margin-left: 0px;
+}
+#abs{
+		opacity:0;
+		margin-left: 140px;
+		transition:0.5s all;
+		z-index:-1;
+}
+
+
+label{
+	font-family: segoe UI;
+	color: white;
+}
+
+.titulo{
+	background-color: darkgrey;
+	cursor: default;
+}
+.Subprod:hover,.Topic:hover,.Subtopic:hover,option:hover{
+	background-color: darkgrey;
+	cursor: default;
+}
+
+.Selected,.Selected1,.Selected2,option:checked {
+    background-color: #207DED;
+	color: white;
+	cursor: default;
+}
+.Selected:hover,.Selected1:hover,.Selected2:hover{
+	background-color: #207DED;
+	color: white;
+	cursor: default;
+}
+.unable{
+	background-color: rgba(89,89,89,0.56);
+	position: absolute;
+	display: block;
+	border-radius: 5px;
+	top:147px;
+	height: 228px;
+	width: 172px;
+	left:204px;
+		
+	}
+.unable2{
+	background-color: rgba(89,89,89,0.56);
+	position: absolute;
+	display: block;
+	border-radius: 5px;
+	width: 172px;
+	height: 262px;
+	top: 382px;
+	left:204px;
+		
+	}
+.unable3{
+	background-color: rgba(89,89,89,0.56);
+	position: absolute;
+	display: block;
+	border-radius: 5px;
+	height: 496px;
+	width: 236px;
+	left:380px;
+	top: 147px;
+		
+	}
+.unable4{
+	background-color: rgba(89,89,89,0.56);
+	position: absolute;
+	display: block;
+	border-radius: 5px;
+	height: 496px;
+	width: 236px;
+	left:620px;
+	top: 147px;
+		
+	}
+	
+}
+
+
+
+
+@media (min-width: 1201px) {
+.codingsito{
+	position:absolute;
+	left:25%;
+	transition:0.5s all;
+}
+.codingsito2{
+	position:absolute;
+	left:4%;
+	transition:0.3s all;
+}
+#Subjet{
+			
+	border: solid;
+	border-width: thin;
+	width: 900px;
+	background-color: white;
+	height: 22px;
+	font-family: Segoe UI;
+	font-size: 11pt;
+	border-radius: 5px;
+		}
+
+#Product,#Plataform {
+	width: 234px;
+	border: 1px solid #93C6FF;
+	font-family: segoe ui;
+	font-size: 9pt;
+	border-radius: 5px;
+	outline: none;		
+	margin-top:45px;
+		}
+		
+#Plataform{
+	width: 172px;
+	height: 261px;
+	top: 257px;
+	overflow: hidden;
+}
+.selectdivs{
+	background-color: white;
+	border: 1px solid #93C6FF;
+	font-family: segoe ui;
+	font-size: 9pt;
+	border-radius: 5px;
+	outline: none;
+	position:absolute;
+	top:147px;
+}
+#Subprodiv{
+	
+	overflow: hidden;
+	height: 226px;
+	width: 170px;
+	left:238px;
+	
+	}
+#Topicdiv {
+	overflow: hidden;
+	height: 495px;
+	width: 234px;
+	left:415px;
+	}
+#Subtopicdiv{
+	overflow-y: scroll;
+	height: 495px;
+	width: 234px;
+	margin-bottom:100px;
+	left:655px;
+}
+
+#Goodwill{
+	border: 1px solid #93C6FF;
+	font-family: Segoe UI;
+	font-size: 10pt;
+	outline: none;
+	position:absolute;
+	top:80px;
+	left:305px;
+	width: 100px;
+}
+#Oferta{
+	border: 1px solid #93C6FF;
+	font-family: Segoe UI;
+	font-size: 10pt;
+	outline: none;	
+	position:absolute;
+	top:50px;
+	left:305px;
+	width: 100px;
+}
+
+#Specific{
+	width: 300px;
+	height: 50px;
+	margin-top:5px;
+	border-radius: 5px;
+	border: solid;
+	border-width: thin;
+		}
+		
+.boton1,.boton2,.boton3{
+	position:absolute;
+	margin-top:5px;
+	border: solid;
+	border-width: thin;
+	width:60px;
+    height:35px;
+	border-radius: 2px;
+	font-size:10px;
+    font-family:Segoe UI;
+    font-weight:bold;
+    color:black;
+}
+
+#copyClip{
+	    background:#83A9CC;
+		margin-left: 70px;
+       }
+	   
+#reset{
+        background: #84C0FF;
+		margin-left: 0px;
+}
+#abs{
+		margin-left: 140px;
+		transition:0.5s all;
+		display: none;
+}
+
+
+#subjetlabl{
+	font-family: segoe UI;
+	color: white;
+}
+
+.titulo{
+	background-color: darkgrey;
+	cursor: default;
+}
+.Subprod:hover,.Topic:hover,.Subtopic:hover,option:hover{
+	background-color: darkgrey;
+	cursor: default;
+}
+
+.Selected,.Selected1,.Selected2,option:checked {
+    background-color: #207DED;
+	color: white;
+	cursor: default;
+}
+.Selected:hover,.Selected1:hover,.Selected2:hover{
+	background-color: #207DED;
+	color: white;
+	cursor: default;
+}
+.unable{
+	background-color: rgba(89,89,89,0.56);
+	position: absolute;
+	display: block;
+	border-radius: 5px;
+	top:147px;
+	height: 228px;
+	width: 172px;
+	left:238px;
+		
+	}
+.unable2{
+	background-color: rgba(89,89,89,0.56);
+	position: absolute;
+	display: block;
+	border-radius: 5px;
+	width: 172px;
+	height: 262px;
+	top: 382px;
+	left:238px;
+		
+	}
+.unable3{
+	background-color: rgba(89,89,89,0.56);
+	position: absolute;
+	display: block;
+	border-radius: 5px;
+	height: 496px;
+	width: 236px;
+	left:415px;
+	top: 147px;
+		
+	}
+.unable4{
+	background-color: rgba(89,89,89,0.56);
+	position: absolute;
+	display: block;
+	border-radius: 5px;
+	height: 496px;
+	width: 236px;
+	left:655px;
+	top: 147px;
+		
+	}
+	
+}

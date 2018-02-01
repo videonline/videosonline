@@ -1,0 +1,246 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	height: 100%;
+}
+.header{
+	background-color: aliceblue;
+	width: 100%;
+	position: fixed;
+	top:0;
+	z-index:1;
+}
+.h1{
+	color: black;
+	text-align: center;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	font-size: 60px;
+}
+nav{
+	background-color: black;
+	text-align: center;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	font-size: 20px;
+	padding: 12px;
+	color: aliceblue;
+	width: 100%;
+	position: fixed;
+	top:0;
+	z-index:1;
+}
+nav a{
+	text-decoration: none;
+	color: aliceblue;
+	font-weight: bold;		
+}
+nav a:hover{
+	color:aqua;
+
+}
+.nav{
+	margin: 20px;
+	border-radius: 5px;	
+}
+
+h2,h3{
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	text-align: center;
+	font-size: 40px;
+	color: aliceblue;
+	text-shadow: 3px 3px 5px black;
+	margin-top: 120px;
+}
+h3{
+	margin-top: 184px;
+}
+
+#Coding{
+	background-image: url(https://kbdevstorage1.blob.core.windows.net/asset-blobs/19894_en_1);
+	background-attachment: fixed;
+	background-size:cover;
+	
+}
+#OEM{
+	background-image: url(../fondos_parallax/anon.jpg);
+	background-attachment: fixed;
+	background-size:cover;
+}
+#bodytools{
+	background-image: url("https://kbdevstorage1.blob.core.windows.net/asset-blobs/18902_en_1");
+	background-attachment: fixed;
+	background-size:cover;
+}
+
+#mailbody{
+	background-image: url("https://kbdevstorage1.blob.core.windows.net/asset-blobs/19185_en_1");
+	background-attachment: fixed;
+	background-size:cover;
+}
+#Processes{
+	background-image: url(../fondos_parallax/support.jpg);
+	background-attachment: fixed;
+	background-size:cover;
+}
+
+#texto_vis,#texto_nos,#texto_fin{
+	margin-top: 678px;
+	padding: 30px 200px;
+	background-color: darkslategrey;
+	box-sizing: border-box;
+	text-align: center;
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	color:white;
+}
+#comunicado_a_piso{
+	width:100%;
+	height:26px;
+	border:none;
+	position:fixed;
+	overflow:hidden;
+	bottom:10px;
+	z-index:2;
+}
+#comunicado{
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	height: 55px;
+	width:100%;
+	background-color: black;
+	z-index:2;
+}
+#texto_fin{
+	margin-top: 1100px;
+	padding: 30px 200px;
+	background-color: darkslategrey;
+	box-sizing: border-box;
+	text-align: center;
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	color:white;
+}
+#texto1, #texto2, #texto3, #texto4{
+	font-size: 32px;
+	border-radius: 0 10px 10px 0;
+	position: fixed;
+	color: aliceblue;
+	margin-top: 5px;
+	width: 200px;
+	height: 75px;
+	left: -175px;
+	text-align: center;
+	line-height: 75px;
+	padding-right:5px;
+}
+#texto1:hover , #texto2:hover , #texto3:hover , #texto4:hover{
+	left:0px;
+    cursor: pointer;
+}
+#texto1{	
+	background-color:darkblue;
+    top:320px;
+	transition:1s all;	
+}
+#texto2{
+	background-color:darkslategrey;
+	top:400px;
+	transition:1s all;	
+}
+#texto3{
+	background-color:darkred;
+    top:480px;
+	transition:1s all;	
+}
+#texto4{
+	background-color:darkcyan;
+	top:560px;
+	transition:1s all;	
+}
+#texto5{
+	font-size: 22px;
+	border-radius: 10px 0 0 10px;
+	position: fixed;
+	color: aliceblue;
+	margin-top: 5px;
+	width: 200px;
+	height: 75px;
+	right: -175px;
+	text-align: center;
+	line-height: 75px;
+	padding-right:5px;
+}
+#texto5{	
+	background-color:darkblue;
+    top:320px;
+	transition:1s all;	
+}
+#texto5:hover{
+	right:0px;
+    cursor: pointer;
+}
+.side{
+	text-decoration:none;
+	font-family: tahoma;
+	width: 100%; 
+	height: 100%;
+	color:white;
+	display: block;
+
+}
+#mh_principal_div{
+	display: none;
+	position:absolute;
+	width:35px;
+	height:25px;
+	top:15px;
+	right:30px;
+	background: url("../images/mh_principal.png");	
+	background-repeat:no-repeat;
+	background-size:35px 25px;
+}
+#mh_principal_div:hover{
+	width:35px;
+	height:25px;
+	cursor:pointer;	
+	background: url("../images/mh_principal_hover.png");
+	background-size:35px 25px;
+	background-repeat:no-repeat;
+}
+.menuh{
+	position:fixed;
+	height:100%;
+	width:200px;
+background-color: rgba(89,89,89,0.16);
+	top:50px;
+	right:-200px;
+	list-style-type: none;
+	text-align: center;
+	font-family:calibri;
+	font-size: 20pt;
+	transition:0.3s all;
+}
+.menuhclick{
+	position:fixed;
+	height:100%;
+	width:200px;
+	background-color: rgba(89,89,110,0.96);
+	top:50px;
+	right:0px;
+	list-style-type: none;
+	text-align: center;
+	font-family:calibri;
+	font-size: 20pt;
+	transition:0.3s all;	
+}
+.opt{
+	padding:10px;
+	cursor:pointer;
+}
+.opt:hover{
+	padding:10px;
+	cursor:pointer;
+	color:aliceblue;
+}
